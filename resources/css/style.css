@@ -13,6 +13,7 @@
 
   --ff-primary: 'Poppins', sans-serif;
   --ff-secondary: 'Volkhov', sans-serif;
+  --ff-digital: 'Digital Numbers', sans-serif;
 
   --fw-regular: 400;
   --fw-semi-bold: 500;
@@ -170,6 +171,10 @@ svg {
   font-family: var(--ff-secondary);
 }
 
+.ff-digital {
+  font-family: var(--ff-digital);
+}
+
 .bg-400 {
   background-color: var(--clr-background-400);
 }
@@ -230,6 +235,21 @@ svg {
 .col-3 {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+}
+
+.col-4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-44 {
+  flex: 0 0 44.44%;
+  max-width: 44.44%;
+}
+
+.col-75 {
+  flex: 0 0 75%;
+  max-width: 75%;
 }
 
 @media (max-width: 800px) {
@@ -385,4 +405,24 @@ nav {
 /* deal */
 .deal {
   background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
+}
+
+.timer {
+  margin-top: 50px;
+}
+
+.time-counter {
+  margin-top: 15px;
+}
+
+.time-counter {
+  gap: 30px;
+}
+
+.time-counter .time-counter-item .box {
+  width: 76px;
+  height: 76px;
+  border-radius: 10px;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
 }
