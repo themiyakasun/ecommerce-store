@@ -247,6 +247,10 @@ body {
   font-size: var(--fs-400);
 }
 
+section {
+  padding: 100px 0;
+}
+
 /* button */
 
 .button {
@@ -371,4 +375,14 @@ nav {
     padding: 0;
     margin-bottom: 30px;
   }
+}
+
+/* logo */
+.logo-items {
+  margin-bottom: 20px;
+}
+
+/* deal */
+.deal {
+  background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
 }
