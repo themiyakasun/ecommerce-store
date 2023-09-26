@@ -8,6 +8,8 @@
   --clr-neutral-900: #000;
 
   --clr-background-400: #fafafa;
+  --clr-background-500: #f8f8f8;
+  --clr-background-600: #e0e0e0;
 
   --ff-primary: 'Poppins', sans-serif;
   --ff-secondary: 'Volkhov', sans-serif;
@@ -117,11 +119,11 @@ svg {
 }
 
 .fw-regular {
-  color: var(--fw-regular);
+  font-weight: var(--fw-regular);
 }
 
 .fw-semi-bold {
-  color: var(--fw-semi-bold);
+  font-weight: var(--fw-semi-bold);
 }
 
 .fs-headings {
@@ -164,6 +166,38 @@ svg {
   font-size: var(--fs-900);
 }
 
+.ff-heading {
+  font-family: var(--ff-secondary);
+}
+
 .bg-400 {
   background-color: var(--clr-background-400);
+}
+
+.bg-500 {
+  background-color: var(--clr-background-500);
+}
+
+.bg-600 {
+  background-color: var(--clr-background-600);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  color: var(--clr-primary-400);
 }
