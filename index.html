@@ -24,42 +24,80 @@
     <header>
       <div class="container">
         <!-- Navbar -->
-        <nav class="primary-nav">
-          <a href="#" class="uppercase ff-heading"><h2>Fasco</h2></a>
-          <ul role="list" class="nav-list">
-            <li><a href="" class="capitalize">home</a></li>
-            <li><a href="" class="capitalize">deals</a></li>
-            <li><a href="" class="capitalize">new arrival</a></li>
-            <li><a href="" class="capitalize">packages</a></li>
-            <li><a href="" class="capitalize">sign in</a></li>
-            <li><a href="" class="capitalize">sign up</a></li>
-          </ul>
+        <nav class="flex items-center justify-between">
+          <a href="#" class="uppercase ff-heading text-primary-400 brand"
+            >Fasco</a
+          >
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+          >
+            <img
+              src="resources/icons/menu.svg"
+              alt=""
+              class="icon-hamburger"
+              aria-hidden="true"
+            />
+            <img
+              src="resources/icons/close.svg"
+              alt=""
+              class="icon-close"
+              aria-hidden="true"
+            />
+          </button>
+          <div class="primary-nav" id="primary-nav">
+            <ul role="list" class="nav-list">
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400">home</a>
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400">deals</a>
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400"
+                  >new arrival</a
+                >
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400"
+                  >packages</a
+                >
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400"
+                  >sign in</a
+                >
+              </li>
+              <li><a href="" class="capitalize button">sign up</a></li>
+            </ul>
+          </div>
         </nav>
         <!-- End of Navbar -->
 
         <!-- Hero Section -->
-        <div class="col-3">
-          <div class="bg-600">
-            <img src="resources/images/header_1.png" alt="" />
+        <div class="hero flex justify-between">
+          <div class="bg-600 hero-item col-3">
+            <img src="resources/images/header_1.png" alt="" class="side-img" />
           </div>
-          <div>
-            <div class="row-3">
-              <div>
+          <div class="hero-item col-3">
+            <div class="flex flex-col justify-between">
+              <div class="bg-600">
                 <img src="resources/images/header_3.png" alt="" />
               </div>
-              <div class="header-text">
+              <div class="header-text text-center">
                 <h2 class="fw-semi-bold uppercase">ultimate</h2>
                 <h1 class="fw-semi-bold uppercase">sale</h1>
                 <h3 class="fs-500 uppercase">new collection</h3>
-                <a href="#" class="uppercase">shop now</a>
+                <a href="#" class="uppercase button">shop now</a>
+              </div>
+              <div class="bottom-img">
+                <img src="resources/images/header_2.png" alt="" />
               </div>
             </div>
-            <div>
-              <img src="resources/images/header_2.png" alt="" />
-            </div>
           </div>
-          <div class="bg-600">
-            <img src="resources/images/header_4.png" alt="" />
+          <div class="bg-600 hero-item col-3">
+            <img src="resources/images/header_4.png" alt="" class="side-img" />
           </div>
         </div>
       </div>
@@ -366,5 +404,7 @@
       </div>
     </footer>
     <!-- End of footer -->
+
+    <script src="resources/js/script.js"></script>
   </body>
 </html>
