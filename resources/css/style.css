@@ -7,6 +7,8 @@
   --clr-neutral-100: #fff;
   --clr-neutral-900: #000;
 
+  --clr-danger: #ff4646;
+
   --clr-background-400: #fafafa;
   --clr-background-500: #f8f8f8;
   --clr-background-600: #e0e0e0;
@@ -113,6 +115,10 @@ svg {
 
 .text-neutral-100 {
   color: var(--clr-neutral-100);
+}
+
+.text-danger {
+  color: var(--clr-danger);
 }
 
 .text-neutral-900 {
@@ -235,6 +241,7 @@ svg {
 .col-3 {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  padding: 0 15px;
 }
 
 .col-4 {
@@ -250,6 +257,11 @@ svg {
 .col-75 {
   flex: 0 0 75%;
   max-width: 75%;
+}
+
+.w-text {
+  width: 615px;
+  margin-inline: auto;
 }
 
 @media (max-width: 800px) {
@@ -281,6 +293,17 @@ section {
   padding: 15px 45px;
   border-radius: 10px;
   box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button-light {
+  cursor: pointer;
+  background-color: var(--clr-background-400);
+  color: var(--clr-accent-400);
+  line-height: 16px;
+  padding: 15px 45px;
+  border-radius: 10px;
+  border: 0;
+  /* box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.15); */
 }
 
 /* navigation */
@@ -407,6 +430,20 @@ nav {
   background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
 }
 
+.deal-box {
+  width: 1000%;
+  overflow: hidden;
+}
+
+.deal-box .time-countdown {
+  width: 450px;
+}
+
+.box {
+  overflow: visible;
+  width: 100%;
+}
+
 .timer {
   margin-top: 50px;
 }
@@ -425,4 +462,71 @@ nav {
   border-radius: 10px;
   background-color: var(--clr-neutral-100);
   box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+}
+
+.slider {
+  overflow-y: visible;
+  width: 100%;
+}
+
+/* new arrival */
+
+.new-arrival {
+  background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
+}
+
+.category-list {
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+
+.category-list .button-light:hover {
+  cursor: pointer;
+  background-color: var(--clr-neutral-900);
+  color: #fff;
+  line-height: 16px;
+  padding: 15px 45px;
+  border-radius: 10px;
+}
+
+.category-list .button-light.active {
+  cursor: pointer;
+  background-color: var(--clr-neutral-900);
+  color: #fff;
+  line-height: 16px;
+  padding: 15px 45px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  width: 100%;
+  background: var(--clr-neutral-100);
+  box-shadow: 0px 40px 90px 0px rgba(0, 0, 0, 0.06);
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card .card-main-img {
+  width: 100%;
+}
+
+.card .card-top-text {
+  margin-top: 10px;
+}
+
+.card .reviews {
+  padding: 25px 0;
+}
+
+.new-arrival button {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .products {
+    display: block;
+  }
 }

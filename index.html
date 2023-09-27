@@ -135,9 +135,9 @@
 
       <!-- Deal of month section -->
       <section class="deal">
-        <div class="container">
-          <div class="flex">
-            <div class="col-44">
+        <!-- <div class="deal-container">
+          <div class="deal-box flex">
+            <div class="time-countdown">
               <h2 class="ff-heading fs-headings fw-regular capitalize">
                 Deals Of The Month
               </h2>
@@ -191,9 +191,16 @@
                 </div>
               </div>
             </div>
-            <div></div>
+            <div class="slider flex">
+              <div class="slide">
+                <img src="resources/images/carousel_1.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="resources/images/carousel_2.png" alt="" />
+              </div>
+            </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <!-- End of Deal of month section -->
 
@@ -203,134 +210,174 @@
           <h2 class="ff-heading fs-headings fw-regular capitalize text-center">
             new arrival
           </h2>
-          <p class="text-accent-400 text-center">
+          <p class="text-accent-400 text-center w-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
             duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
             sollicitudin
           </p>
 
-          <ul class="category-list text-center" role="list">
+          <ul class="category-list text-center flex justify-center" role="list">
             <li>
-              <button class="text-accent-400 bg-400 capitalize">
+              <button class="text-accent-400 capitalize button-light">
                 men's fashion
               </button>
             </li>
             <li>
-              <button class="text-accent-400 bg-400 capitalize">
+              <button
+                class="text-accent-400 bg-400 capitalize button-light active"
+              >
                 women's fashion
               </button>
             </li>
             <li>
-              <button class="text-accent-400 bg-400 capitalize">
+              <button class="text-accent-400 bg-400 capitalize button-light">
                 women accessories
               </button>
             </li>
             <li>
-              <button class="text-accent-400 bg-400 capitalize">
+              <button class="text-accent-400 bg-400 capitalize button-light">
                 men accessories
               </button>
             </li>
             <li>
-              <button class="text-accent-400 bg-400 capitalize">
+              <button class="text-accent-400 bg-400 capitalize button-light">
                 discount deals
               </button>
             </li>
           </ul>
 
-          <div class="even-columns">
-            <div>
-              <img src="resources/images/product_1.png" alt="" />
-              <div>
-                <div>
-                  <h4 class="fs-sub-headings fw-semi-bold">Shiny Dress</h4>
-                  <span class="fs-300">Al Karam</span>
+          <div class="products flex">
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="resources/images/product_1.png"
+                  alt=""
+                  class="card-main-img"
+                />
+                <div class="card-top-text flex justify-between items-center">
+                  <div>
+                    <h4 class="fs-sub-headings fw-semi-bold">Shiny Dress</h4>
+                    <span class="fs-300">Al Karam</span>
+                  </div>
+                  <img src="resources/icons/stars.png" alt="" />
                 </div>
-                <img src="resources/icons/stars.png" alt="" />
-              </div>
-              <span class="fs-300">(4.1k) Customer Reviews</span>
-              <div>
-                <p class="fs-600 fw-semi-bold">$95.50</p>
-                <span class="fs-300">Almost Sold Out</span>
+                <p class="fs-300 reviews">(4.1k) Customer Reviews</p>
+                <div class="flex justify-between items-center">
+                  <p class="fs-600 fw-semi-bold">$95.50</p>
+                  <span class="fs-300 text-danger">Almost Sold Out</span>
+                </div>
               </div>
             </div>
-            <div>
-              <img src="resources/images/product_2.png" alt="" />
-              <div>
-                <div>
-                  <h4 class="fs-sub-headings fw-semi-bold">Long Dress</h4>
-                  <span class="fs-300">Al Karam</span>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="resources/images/product_2.png"
+                  alt=""
+                  class="card-main-img"
+                />
+                <div class="card-top-text flex justify-between items-center">
+                  <div>
+                    <h4 class="fs-sub-headings fw-semi-bold">Long Dress</h4>
+                    <span class="fs-300">Al Karam</span>
+                  </div>
+                  <img src="resources/icons/stars.png" alt="" />
                 </div>
-                <img src="resources/icons/stars.png" alt="" />
-              </div>
-              <span class="fs-300">(4.1k) Customer Reviews</span>
-              <div>
-                <p class="fs-600 fw-semi-bold">$95.50</p>
-                <span class="fs-300">Almost Sold Out</span>
+                <p class="fs-300 reviews">(4.1k) Customer Reviews</p>
+                <div class="flex justify-between items-center">
+                  <p class="fs-600 fw-semi-bold">$95.50</p>
+                  <span class="fs-300 text-danger">Almost Sold Out</span>
+                </div>
               </div>
             </div>
-            <div>
-              <img src="resources/images/product_3.png" alt="" />
-              <div>
-                <div>
-                  <h4 class="fs-sub-headings fw-semi-bold">Full Sweater</h4>
-                  <span class="fs-300">Al Karam</span>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="resources/images/product_3.png"
+                  alt=""
+                  class="card-main-img"
+                />
+                <div class="card-top-text flex justify-between items-center">
+                  <div>
+                    <h4 class="fs-sub-headings fw-semi-bold">Full Sweater</h4>
+                    <span class="fs-300">Al Karam</span>
+                  </div>
+                  <img src="resources/icons/stars.png" alt="" />
                 </div>
-                <img src="resources/icons/stars.png" alt="" />
-              </div>
-              <span class="fs-300">(4.1k) Customer Reviews</span>
-              <div>
-                <p class="fs-600 fw-semi-bold">$95.50</p>
-                <span class="fs-300">Almost Sold Out</span>
+                <p class="fs-300 reviews">(4.1k) Customer Reviews</p>
+                <div class="flex justify-between items-center">
+                  <p class="fs-600 fw-semi-bold">$95.50</p>
+                  <span class="fs-300 text-danger">Almost Sold Out</span>
+                </div>
               </div>
             </div>
-            <div>
-              <img src="resources/images/product_4.png" alt="" />
-              <div>
-                <div>
-                  <h4 class="fs-sub-headings fw-semi-bold">White Dress</h4>
-                  <span class="fs-300">Al Karam</span>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="resources/images/product_4.png"
+                  alt=""
+                  class="card-main-img"
+                />
+                <div class="card-top-text flex justify-between items-center">
+                  <div>
+                    <h4 class="fs-sub-headings fw-semi-bold">White Dress</h4>
+                    <span class="fs-300">Al Karam</span>
+                  </div>
+                  <img src="resources/icons/stars.png" alt="" />
                 </div>
-                <img src="resources/icons/stars.png" alt="" />
-              </div>
-              <span class="fs-300">(4.1k) Customer Reviews</span>
-              <div>
-                <p class="fs-600 fw-semi-bold">$95.50</p>
-                <span class="fs-300">Almost Sold Out</span>
+                <p class="fs-300 reviews">(4.1k) Customer Reviews</p>
+                <div class="flex justify-between items-center">
+                  <p class="fs-600 fw-semi-bold">$95.50</p>
+                  <span class="fs-300 text-danger">Almost Sold Out</span>
+                </div>
               </div>
             </div>
-            <div>
-              <img src="resources/images/product_5.png" alt="" />
-              <div>
-                <div>
-                  <h4 class="fs-sub-headings fw-semi-bold">Colorful Dress</h4>
-                  <span class="fs-300">Al Karam</span>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="resources/images/product_5.png"
+                  alt=""
+                  class="card-main-img"
+                />
+                <div class="card-top-text flex justify-between items-center">
+                  <div>
+                    <h4 class="fs-sub-headings fw-semi-bold">Colorful Dress</h4>
+                    <span class="fs-300">Al Karam</span>
+                  </div>
+                  <img src="resources/icons/stars.png" alt="" />
                 </div>
-                <img src="resources/icons/stars.png" alt="" />
-              </div>
-              <span class="fs-300">(4.1k) Customer Reviews</span>
-              <div>
-                <p class="fs-600 fw-semi-bold">$95.50</p>
-                <span class="fs-300">Almost Sold Out</span>
+                <p class="fs-300 reviews">(4.1k) Customer Reviews</p>
+                <div class="flex justify-between items-center">
+                  <p class="fs-600 fw-semi-bold">$95.50</p>
+                  <span class="fs-300 text-danger">Almost Sold Out</span>
+                </div>
               </div>
             </div>
-            <div>
-              <img src="resources/images/product_6.png" alt="" />
-              <div>
-                <div>
-                  <h4 class="fs-sub-headings fw-semi-bold">White Shirt</h4>
-                  <span class="fs-300">Al Karam</span>
+            <div class="col-3">
+              <div class="card">
+                <img
+                  src="resources/images/product_6.png"
+                  alt=""
+                  class="card-main-img"
+                />
+                <div class="card-top-text flex justify-between items-center">
+                  <div>
+                    <h4 class="fs-sub-headings fw-semi-bold">White Shirt</h4>
+                    <span class="fs-300">Al Karam</span>
+                  </div>
+                  <img src="resources/icons/stars.png" alt="" />
                 </div>
-                <img src="resources/icons/stars.png" alt="" />
-              </div>
-              <span class="fs-300">(4.1k) Customer Reviews</span>
-              <div>
-                <p class="fs-600 fw-semi-bold">$95.50</p>
-                <span class="fs-300">Almost Sold Out</span>
+                <p class="fs-300 reviews">(4.1k) Customer Reviews</p>
+                <div class="flex justify-between items-center">
+                  <p class="fs-600 fw-semi-bold">$95.50</p>
+                  <span class="fs-300 text-danger">Almost Sold Out</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <button class="capitalize">view more</button>
+          <div class="flex justify-center">
+            <button class="capitalize button">view more</button>
+          </div>
         </div>
       </section>
       <!-- End of arival section -->
