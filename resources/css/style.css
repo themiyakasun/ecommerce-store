@@ -12,6 +12,7 @@
   --clr-background-400: #fafafa;
   --clr-background-500: #f8f8f8;
   --clr-background-600: #e0e0e0;
+  --clr-background-700: #dadada;
 
   --ff-primary: 'Poppins', sans-serif;
   --ff-secondary: 'Volkhov', sans-serif;
@@ -193,6 +194,10 @@ svg {
   background-color: var(--clr-background-600);
 }
 
+.bg-700 {
+  background-color: var(--clr-background-700);
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -236,6 +241,11 @@ svg {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.col-2 {
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .col-3 {
@@ -528,5 +538,115 @@ nav {
 @media (max-width: 800px) {
   .products {
     display: block;
+  }
+}
+
+/* peaky bliders */
+.peaky-blinders {
+  padding: 0;
+}
+
+.peaky-bliders-wrapper {
+  height: 570px;
+}
+
+.peaky-blinders .image-box {
+  background: url(../images/peaky_blinders.png),
+    #f8f8f8 0px -42.956px / 100% 126.659% no-repeat;
+  position: relative;
+  margin-right: -40px;
+}
+
+.peaky-blinders .image-box .pointer-small:first-child {
+  position: absolute;
+  left: 45%;
+  top: 4%;
+}
+
+.peaky-blinders .image-box .pointer-small:nth-child(2) {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.peaky-blinders .image-box .pointer-small:nth-child(3) {
+  position: absolute;
+  left: 55%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+
+.peaky-blinders .image-box .pointer-left {
+  position: absolute;
+  left: 9%;
+  top: 25%;
+}
+
+.peaky-blinders .image-box .pointer-small .pointer-text-box,
+.peaky-blinders .image-box .pointer-left .pointer-text-box {
+  padding: 7px 30px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.41);
+  backdrop-filter: blur(6px);
+}
+
+.peaky-blinders .image-box .pointer-small .pointer-text-box {
+  margin-left: 105px;
+}
+
+.peaky-blinders .image-box .pointer-left .pointer-text-box {
+  margin-right: 105px;
+}
+
+.peaky-blinders .image-box .pointer-left img {
+  margin-left: 105px;
+  transform: rotateX(180deg);
+  transform: rotateY(180deg);
+}
+
+.peaky-blinders .text-box {
+  padding: 60px;
+  gap: 20px;
+  z-index: 1;
+  height: 100%;
+}
+
+.peaky-blinders .text-box span,
+.peaky-blinders .text-box h2,
+.peaky-blinders .text-box p,
+.peaky-blinders .text-box h4 {
+  margin: 20px 0;
+}
+
+.peaky-blinders .text-box a {
+  margin-bottom: 60px;
+}
+
+/* feature section */
+
+.feature {
+  gap: 20px;
+}
+
+/* gallery */
+
+.gallery {
+  margin-top: 100px;
+  flex-wrap: nowrap;
+}
+
+.gallery img {
+  width: 256px;
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100%;
   }
 }
