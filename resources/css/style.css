@@ -246,6 +246,7 @@ svg {
 .col-2 {
   flex: 0 0 50%;
   max-width: 50%;
+  padding: 0 15px;
 }
 
 .col-3 {
@@ -257,6 +258,7 @@ svg {
 .col-4 {
   flex: 0 0 25%;
   max-width: 25%;
+  padding: 0 15px;
 }
 
 .col-44 {
@@ -276,6 +278,14 @@ svg {
 
 @media (max-width: 800px) {
   .col-3 {
+    max-width: 100%;
+  }
+
+  .col-2 {
+    max-width: 100%;
+  }
+
+  .col-4 {
     max-width: 100%;
   }
 }
@@ -648,5 +658,55 @@ nav {
 
   .gallery img {
     width: 100%;
+  }
+}
+
+/* news-letter */
+
+.sub-email {
+  height: 60px;
+  width: 630px;
+  margin: 30px 0;
+  border: 0;
+  outline: none;
+  padding: 0 20px;
+  box-shadow: 0px 3.01852px 3.14815px 0px rgba(0, 0, 0, 0.01),
+    0px 13.28148px 6.51852px 0px rgba(0, 0, 0, 0.02),
+    0px 32.6px 13px 0px rgba(0, 0, 0, 0.02),
+    0px 62.78519px 25.48148px 0px rgba(0, 0, 0, 0.02),
+    0px 105.64815px 46.85185px 0px rgba(0, 0, 0, 0.03),
+    0px 163px 80px 0px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 800px) {
+  .newsletter-wrapper {
+    display: block;
+  }
+}
+
+/* footer */
+
+footer {
+  padding: 30px 0;
+  border-top: 1px solid var(--clr-background-700);
+}
+
+.primary-footer {
+  margin-bottom: 30px;
+}
+
+.primary-footer .footer-list {
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .primary-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-list {
+    justify-content: center;
+    margin-top: 20px;
   }
 }

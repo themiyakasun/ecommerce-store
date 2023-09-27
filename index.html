@@ -485,39 +485,54 @@
 
       <!-- testimonial section -->
       <section class="bg-400">
-        <h2 class="ff-heading fs-headings fw-regular capitalize text-center">
-          This Is What Our Customers Say
-        </h2>
-        <p class="text-accent-400 text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-          duis
-        </p>
-        <div>
-          <!-- curosel -->
+        <div class="container">
+          <h2 class="ff-heading fs-headings fw-regular capitalize text-center">
+            This Is What Our Customers Say
+          </h2>
+          <p class="text-accent-400 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis
+          </p>
+          <div class="testimonials flex items-center justify-between">
+            <!-- curosel -->
+            <div class="testimonials-container">
+              <div class="testimonial previous"></div>
+              <div class="testimonial active"></div>
+              <div class="testimonial next"></div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End of testimonial section -->
 
       <!-- newsletter section -->
       <section>
-        <div class="columns">
-          <div>
-            <img src="resources/images/newsletter_1.png" alt="" />
-          </div>
-          <div class="text-center">
-            <h2 class="ff-heading fs-headings fw-regular capitalize">
-              Subscribe To Our Newsletter
-            </h2>
-            <p class="text-accent-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
-              duis ultrices sollicitudin
-            </p>
-            <input type="email" />
-            <button type="submit" class="capitalize">subscribe now</button>
-          </div>
-          <div>
-            <img src="resources/images/newsletter_2.png" alt="" />
+        <div class="container">
+          <div class="newsletter-wrapper flex items-center">
+            <div class="col-4">
+              <img src="resources/images/newsletter_1.png" alt="" />
+            </div>
+            <div class="text-center col-2">
+              <h2 class="ff-heading fs-headings fw-regular capitalize">
+                Subscribe To Our Newsletter
+              </h2>
+              <p class="text-accent-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+                duis ultrices sollicitudin
+              </p>
+              <input
+                type="email"
+                class="sub-email"
+                placeholder="michael@ymail.com"
+              />
+              <button type="submit" class="capitalize button">
+                subscribe now
+              </button>
+            </div>
+            <div class="col-4">
+              <img src="resources/images/newsletter_2.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -527,18 +542,22 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="primary-footer">
-          <a href="" class="ff-heading fs-800 uppercase">fasco</a>
-          <ul class="footer-list" role="list">
-            <li><a href="">support center</a></li>
-            <li><a href="">invoicing</a></li>
-            <li><a href="">contract</a></li>
-            <li><a href="">careers</a></li>
-            <li><a href="">blog</a></li>
-            <li><a href="">FAQ's</a></li>
+        <div class="primary-footer flex justify-between items-center">
+          <a href="" class="ff-heading fs-800 uppercase text-primary-400"
+            >fasco</a
+          >
+          <ul class="footer-list flex" role="list">
+            <li><a href="" class="text-primary-400">support center</a></li>
+            <li><a href="" class="text-primary-400">invoicing</a></li>
+            <li><a href="" class="text-primary-400">contract</a></li>
+            <li><a href="" class="text-primary-400">careers</a></li>
+            <li><a href="" class="text-primary-400">blog</a></li>
+            <li><a href="" class="text-primary-400">FAQ's</a></li>
           </ul>
         </div>
-        <span class="fs-300">Copyright © 2022 Xpro . All Rights Reseved.</span>
+        <p class="fs-300 text-center">
+          Copyright © 2022 Xpro . All Rights Reseved.
+        </p>
       </div>
     </footer>
     <!-- End of footer -->
