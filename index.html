@@ -23,6 +23,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/slider.css" />
   </head>
   <body>
     <header>
@@ -135,9 +136,9 @@
 
       <!-- Deal of month section -->
       <section class="deal">
-        <!-- <div class="deal-container">
+        <div class="container">
           <div class="deal-box flex">
-            <div class="time-countdown">
+            <div class="time-countdown col-2">
               <h2 class="ff-heading fs-headings fw-regular capitalize">
                 Deals Of The Month
               </h2>
@@ -191,16 +192,35 @@
                 </div>
               </div>
             </div>
-            <div class="slider flex">
-              <div class="slide">
-                <img src="resources/images/carousel_1.png" alt="" />
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <div class="slider flex">
+                  <div class="slide active">
+                    <img src="resources/images/carousel_1.png" alt="" />
+                  </div>
+                  <div class="slide next">
+                    <img src="resources/images/carousel_2.png" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="resources/images/carousel_1.png" alt="" />
+                  </div>
+                </div>
               </div>
-              <div class="slide">
-                <img src="resources/images/carousel_2.png" alt="" />
+              <div class="btn-container flex">
+                <button class="slider-btn flex justify-center items-center">
+                  <img
+                    src="resources/icons/next.svg"
+                    alt=""
+                    style="transform: rotate(180deg)"
+                  />
+                </button>
+                <button class="slider-btn flex justify-center items-center">
+                  <img src="resources/icons/next.svg" alt="" />
+                </button>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </section>
       <!-- End of Deal of month section -->
 
@@ -493,13 +513,67 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
             duis
           </p>
-          <div class="testimonials flex items-center justify-between">
-            <!-- curosel -->
-            <div class="testimonials-container">
-              <div class="testimonial previous"></div>
-              <div class="testimonial active"></div>
-              <div class="testimonial next"></div>
-            </div>
+
+          <div class="carousel">
+            <ul class="carousel__list">
+              <li class="carousel__item" data-pos="-1">
+                <div class="carousel_img">
+                  <img src="resources/images/testimonial_2.png" alt="" />
+                </div>
+                <div class="carousel__item-text-box">
+                  <p class="des text-primary-400">
+                    "You won't regret it. I would like to personally thank you
+                    for your outstanding product. Absolutely wonderful!"
+                  </p>
+                  <img src="resources/icons/stars.png" alt="" />
+                  <hr style="width: 230px" />
+                  <h3 class="fs-800 ff-heading">James K.</h3>
+                  <p>Traveler</p>
+                </div>
+              </li>
+              <li class="carousel__item" data-pos="0">
+                <div class="carousel_img">
+                  <img src="resources/images/testimonial_1.png" alt="" />
+                </div>
+                <div class="carousel__item-text-box">
+                  <p class="des text-primary-400">
+                    "You won't regret it. I would like to personally thank you
+                    for your outstanding product. Absolutely wonderful!"
+                  </p>
+                  <img src="resources/icons/stars.png" alt="" />
+                  <hr style="width: 230px" />
+                  <h3 class="fs-800 ff-heading">James K.</h3>
+                  <p>Traveler</p>
+                </div>
+              </li>
+              <li class="carousel__item" data-pos="1">
+                <div class="carousel_img">
+                  <img src="resources/images/testimonial_1.png" alt="" />
+                </div>
+                <div class="carousel__item-text-box">
+                  <p class="des text-primary-400">
+                    "You won't regret it. I would like to personally thank you
+                    for your outstanding product. Absolutely wonderful!"
+                  </p>
+                  <img src="resources/icons/stars.png" alt="" />
+                  <hr style="width: 230px" />
+                  <h3 class="fs-800 ff-heading">James K.</h3>
+                  <p>Traveler</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div style="margin-top: 150px; gap: 20px" class="flex justify-center">
+            <button id="prevButton" class="slider-btn">
+              <img
+                src="resources/icons/next.svg"
+                alt=""
+                style="transform: rotate(180deg)"
+              />
+            </button>
+            <button id="nextButton" class="slider-btn">
+              <img src="resources/icons/next.svg" alt="" />
+            </button>
           </div>
         </div>
       </section>

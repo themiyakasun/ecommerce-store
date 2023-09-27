@@ -45,3 +45,71 @@ const countdown = () => {
 };
 
 setInterval(countdown, 1000);
+
+//carousel
+const state = {};
+const carouselList = document.querySelector('.carousel__list');
+const carouselItems = document.querySelectorAll('.carousel__item');
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+const elems = Array.from(carouselItems);
+
+carouselList.addEventListener('click', function (event) {
+  var newActive = event.target;
+  var isItem = newActive.closest('.carousel__item');
+
+  if (!isItem || newActive.classList.contains('carousel__item_active')) {
+    return;
+  }
+
+  update(newActive);
+});
+
+prevButton.addEventListener('click', function () {
+  const currentActive = document.querySelector('.carousel__item_active');
+  const currentIndex = elems.indexOf(currentActive);
+  const prevIndex = (currentIndex - 1 + elems.length) % elems.length;
+  const prevItem = elems[prevIndex];
+
+  update(prevItem);
+});
+
+nextButton.addEventListener('click', function () {
+  const currentActive = document.querySelector('.carousel__item_active');
+  const currentIndex = elems.indexOf(currentActive);
+  const nextIndex = (currentIndex + 1) % elems.length;
+  const nextItem = elems[nextIndex];
+
+  update(nextItem);
+});
+
+const update = function (newActive) {
+  const newActivePos = newActive.dataset.pos;
+
+  elems.forEach((item) => {
+    var itemPos = item.dataset.pos;
+
+    item.dataset.pos = getPos(itemPos, newActivePos);
+  });
+
+  elems.forEach((item) => {
+    var itemPos = item.dataset.pos;
+
+    if (itemPos == 0) {
+      item.classList.add('carousel__item_active');
+    } else {
+      item.classList.remove('carousel__item_active');
+    }
+  });
+};
+
+const getPos = function (current, active) {
+  const diff = current - active;
+
+  if (Math.abs(current - active) > 2) {
+    return -current;
+  }
+
+  return diff;
+};
