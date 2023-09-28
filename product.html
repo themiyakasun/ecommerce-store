@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-numbers"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="resources/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="flex justify-between items-center">
+          <a href="#" class="uppercase ff-heading text-primary-400 brand"
+            >Fasco</a
+          >
+          <div class="secondary-nav" id="secondary-nav">
+            <ul role="list" class="nav-list">
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400 nav-item"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400 nav-item"
+                  >shop</a
+                >
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400 nav-item"
+                  >products</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="capitalize text-primary-400 fs-400 flex items-center dropdown-link"
+                  >pages <img src="resources/icons/arrow-bottom.png" alt="" />
+                </a>
+                <ul role="list" class="dropdown-list">
+                  <li><a href="">Dropdown Pages</a></li>
+                  <li><a href="">Dropdown Pages</a></li>
+                  <li><a href="">Dropdown Pages</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-icons">
+            <ul role="list" class="flex items-center">
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/search.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/user.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/star.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/cart.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn mobile-toggle"
+                  aria-controls="secondary-nav"
+                  aria-expanded="false"
+                >
+                  <img src="resources/icons/menu.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- product section -->
+      <section>
+        <div class="container">
+          <div class="product flex">
+            <div class="col-2">
+              <div class="product-images flex">
+                <div class="product-main-img">
+                  <img src="resources/images/product_list_6.png" alt="" />
+                </div>
+                <div class="product-side-images flex flex-col">
+                  <div class="product-side-img">
+                    <img src="resources/images/product_side_img_1.png" alt="" />
+                  </div>
+                  <div class="product-side-img active">
+                    <img src="resources/images/product_list_6.png" alt="" />
+                  </div>
+                  <div class="product-side-img">
+                    <img src="resources/images/product_side_img_2.png" alt="" />
+                  </div>
+                  <div class="product-side-img">
+                    <img src="resources/images/product_side_img_3.png" alt="" />
+                  </div>
+                  <div class="product-side-img">
+                    <img src="resources/images/product_side_img_4.png" alt="" />
+                  </div>
+                  <div class="product-side-img">
+                    <img src="resources/images/product_side_img_5.png" alt="" />
+                  </div>
+                  <div class="product-side-img">
+                    <img src="resources/images/product_side_img_6.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="product-details">
+                <p class="ff-heading" style="font-size: 14px; color: #666">
+                  FASCO
+                </p>
+                <div class="product-heading flex justify-between items-center">
+                  <h3 class="ff-heading fs-800 text-neutral-900">
+                    Denim Jacket
+                  </h3>
+                  <img src="resources/icons/start_outline.png" alt="" />
+                </div>
+                <div class="product-rating flex items-center">
+                  <img src="resources/icons/star_black.png" alt="" /><img
+                    src="resources/icons/star_black.png"
+                    alt=""
+                  /><img src="resources/icons/star_black.png" alt="" /><img
+                    src="resources/icons/star_black.png"
+                    alt=""
+                  /><img src="resources/icons/start_outline.png" alt="" />
+                  <span
+                    class="ff-accent"
+                    style="font-size: 15px; margin-left: 5px"
+                    >(3)</span
+                  >
+                </div>
+                <div class="product-price flex items-center">
+                  <h3 class="ff-heading fs-600 text-neutral-900">$39.00</h3>
+                  <del class="ff-accent" style="color: #666">$59.00</del>
+                  <span
+                    class="ff-accent product-discount text-neutral-100 fw-semo-bold"
+                    >Save 33%</span
+                  >
+                </div>
+                <div class="product-views flex items-center">
+                  <img src="resources/icons/eye.png" alt="" />
+                  <span class="text-accent-500"
+                    >24 people are viewing this right now</span
+                  >
+                </div>
+                <div class="product-sale flex justify-between">
+                  <h5 class="ff-heading text-danger">
+                    Hurry up! Sale ends in:
+                  </h5>
+                  <div class="time-count flex text-danger fw-semi-bold">
+                    <span>00</span>
+                    <span>:</span>
+                    <span>05</span>
+                    <span>:</span>
+                    <span>59</span>
+                    <span>:</span>
+                    <span>47</span>
+                  </div>
+                </div>
+                <div class="products-left" style="margin-top: 30px">
+                  <p class="ff-accent">
+                    Only <span class="fw-semi-bold">9</span> item(s) left in
+                    stock!
+                  </p>
+                  <div class="lines">
+                    <div class="line_1 bg-700"></div>
+                    <div class="line_2"></div>
+                  </div>
+                </div>
+                <div class="product-sizes" style="margin-top: 30px">
+                  <h5 class="ff-heading fw-semi-bold">Size: M</h5>
+                  <div class="size-list flex">
+                    <button class="btn size active">M</button>
+                    <button class="btn size">L</button>
+                    <button class="btn size">XL</button>
+                    <button class="btn size">XXL</button>
+                  </div>
+                </div>
+                <div class="product-colors" style="margin-top: 20px">
+                  <h5 class="ff-heading fw-semi-bold">Color: Blue</h5>
+                  <div class="color-list flex">
+                    <button
+                      class="btn color active"
+                      style="background-color: #8db4d2"
+                    ></button>
+                    <button
+                      class="btn color"
+                      style="background-color: #000"
+                    ></button>
+                    <button
+                      class="btn color"
+                      style="background-color: #ffd1dc"
+                    ></button>
+                  </div>
+                </div>
+                <div class="product-quantity" style="margin-top: 30px">
+                  <h5 class="ff-heading fw-semi-bold">Quantity</h5>
+
+                  <form action="">
+                    <div
+                      class="product-actions flex items-center"
+                      style="margin-top: 15px"
+                    >
+                      <div class="quantity-input flex items-center">
+                        <div
+                          class="quantity-items flex items-center justify-center"
+                        >
+                          <img src="resources/icons/sub.png" alt="" />
+                        </div>
+                        <div class="quantity-items">
+                          <input type="text" value="1" />
+                        </div>
+                        <div
+                          class="quantity-items flex items-center justify-center"
+                        >
+                          <img src="resources/icons/plus.png" alt="" />
+                        </div>
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn flex justify-center items-center"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="actions">
+                  <div class="flex items-center" style="gap: 40px">
+                    <a
+                      href=""
+                      class="flex items-center ff-accent text-neutral-900"
+                      style="gap: 10px"
+                      ><img
+                        src="resources/icons/compare.png"
+                        alt=""
+                      />Compare</a
+                    >
+                    <a
+                      href=""
+                      class="flex items-center ff-accent text-neutral-900"
+                      style="gap: 10px"
+                      ><img src="resources/icons/question.png" alt="" />Ask a
+                      Question</a
+                    >
+                    <a
+                      href=""
+                      class="flex items-center ff-accent text-neutral-900"
+                      style="gap: 10px"
+                      ><img src="resources/icons/share.png" alt="" />Share</a
+                    >
+                  </div>
+                </div>
+                <div class="product-delivery">
+                  <p
+                    class="product-delivery-item flex items-center fw-semi-bold"
+                  >
+                    <img src="resources/icons/delivery.png" alt="" />
+                    <span class="ff-heading text-neutral-900"
+                      >Estimated Delivery:
+                      <span class="ff-accent text-primary-400"
+                        >Jul 30 - Aug 03</span
+                      ></span
+                    >
+                  </p>
+                  <p
+                    class="product-delivery-item flex items-center fw-semi-bold"
+                  >
+                    <img src="resources/icons/shipping & returns.png" alt="" />
+                    <span class="ff-heading text-neutral-900"
+                      >Free Shipping & Returns:
+                      <span class="ff-accent text-primary-400"
+                        >On all orders over $75</span
+                      ></span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="trust flex flex-col justify-center items-center bg-400"
+                >
+                  <img src="resources/images/trustbag.png.png" alt="" />
+                  <h5 class="ff-heading">Guarantee safe & secure checkout</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of product section -->
+    </main>
+
+    <script src="resources/js/script.js"></script>
+    <script>
+      secondaryNavFunc();
+    </script>
+  </body>
+</html>
