@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-numbers"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="resources/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="flex justify-between items-center">
+          <a href="#" class="uppercase ff-heading text-primary-400 brand"
+            >Fasco</a
+          >
+          <div class="secondary-nav" id="secondary-nav">
+            <ul role="list" class="nav-list">
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400 nav-item"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400 nav-item"
+                  >shop</a
+                >
+              </li>
+              <li>
+                <a href="" class="capitalize text-primary-400 fs-400 nav-item"
+                  >products</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="capitalize text-primary-400 fs-400 flex items-center dropdown-link"
+                  >pages <img src="resources/icons/arrow-bottom.png" alt="" />
+                </a>
+                <ul role="list" class="dropdown-list">
+                  <li><a href="">Dropdown Pages</a></li>
+                  <li><a href="">Dropdown Pages</a></li>
+                  <li><a href="">Dropdown Pages</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-icons">
+            <ul role="list" class="flex items-center">
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/search.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/user.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/star.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button class="btn">
+                  <img src="resources/icons/cart.png" alt="" />
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn mobile-toggle"
+                  aria-controls="secondary-nav"
+                  aria-expanded="false"
+                >
+                  <img src="resources/icons/menu.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <h2 class="fs-headings ff-heading text-center">Fashion</h2>
+        <p class="flex items-center justify-center hero-p">
+          Home <img src="resources/icons/arrow-right.png" alt="" /> Fashion
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Product list -->
+      <section>
+        <div class="container">
+          <div class="flex">
+            <div class="col-4">
+              <h4 class="ff-heading fs-800">Filter</h4>
+
+              <div class="sizes sidebar-item">
+                <h5 class="ff-heading">Size</h5>
+                <div class="size-list flex">
+                  <div class="size-item flex justify-center items-center">
+                    <button>S</button>
+                  </div>
+                  <div class="size-item flex justify-center items-center">
+                    <button>M</button>
+                  </div>
+                  <div class="size-item flex justify-center items-center">
+                    <button>L</button>
+                  </div>
+                  <div class="size-item flex justify-center items-center">
+                    <button>XL</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="colors sidebar-item">
+                <h5 class="ff-heading">Colors</h5>
+                <div class="color-list flex">
+                  <button
+                    class="color-btn btn"
+                    style="background: #ff6c6c"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #ff7629"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #fff06c"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #9bff6c"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #6cff9e"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #6cffdc"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #6cb9ff"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #6cf6ff"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #6ca7ff"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #6c7bff"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #8a6cff"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #b66cff"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #fc6cff"
+                  ></button>
+                  <button
+                    class="color-btn btn"
+                    style="background: #ff6c6c"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="prices sidebar-item">
+                <h5 class="ff-heading">Prices</h5>
+
+                <div class="price-list flex flex-col">
+                  <button class="btn text-accent-400">$0-$50</button>
+                  <button class="btn text-accent-400">$50-$100</button>
+                  <button class="btn text-accent-400">$100-$150</button>
+                  <button class="btn text-accent-400">$150-$200</button>
+                  <button class="btn text-accent-400">$300-$400</button>
+                </div>
+              </div>
+
+              <div class="brands sidebar-item">
+                <h5 class="ff-heading">Brands</h5>
+
+                <div class="brand-list">
+                  <button class="btn text-accent-400">Minimog</button>
+                  <button class="btn text-accent-400">Retrolie</button>
+                  <button class="btn text-accent-400">Brook</button>
+                  <button class="btn text-accent-400">Learts</button>
+                  <button class="btn text-accent-400">Vagabond</button>
+                  <button class="btn text-accent-400">Abby</button>
+                </div>
+              </div>
+
+              <div class="collections sidebar-item">
+                <h5 class="ff-heading">Collections</h5>
+
+                <div class="collection-list flex flex-col">
+                  <button class="btn text-accent-400">All products</button>
+                  <button class="btn text-accent-400">Best sellers</button>
+                  <button class="btn text-accent-400">New arrivals</button>
+                  <button class="btn text-accent-400">Accessories</button>
+                </div>
+              </div>
+
+              <div class="tags sidebar-item">
+                <h5 class="ff-heading">Tags</h5>
+
+                <div class="tag-list flex">
+                  <button class="btn text-accent-400">Fashion</button>
+                  <button class="btn text-accent-400">Hats</button>
+                  <button class="btn text-accent-400">Sandal</button>
+                  <button class="btn text-accent-400">Belt</button>
+                  <button class="btn text-accent-400">Bags</button>
+                  <button class="btn text-accent-400">Snacker</button>
+                  <button class="btn text-accent-400">Denim</button>
+                  <button class="btn text-accent-400">Minimog</button>
+                  <button class="btn text-accent-400">Vagabond</button>
+                  <button class="btn text-accent-400">Sunglasses</button>
+                  <button class="btn text-accent-400">Beachwear</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-75"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End of product list -->
+    </main>
+
+    <script src="resources/js/script.js"></script>
+    <script>
+      secondaryNavFunc();
+    </script>
+  </body>
+</html>

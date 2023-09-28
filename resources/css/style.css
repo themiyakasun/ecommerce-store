@@ -304,6 +304,12 @@ section {
 }
 
 /* button */
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 .button {
   cursor: pointer;
@@ -838,4 +844,145 @@ footer {
 .carousel__item-text-box hr,
 .carousel__item-text-box h3 {
   margin-bottom: 15px;
+}
+
+.carousel-btn {
+  margin-top: 150px;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .carousel__item {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .w-text {
+    width: auto;
+  }
+
+  .carousel-btn {
+    margin-top: 300px;
+  }
+}
+
+/* secondary-nav */
+.secondary-nav .nav-list li a {
+  padding-bottom: 5px;
+}
+
+.secondary-nav .nav-list li .nav-item:hover {
+  border-bottom: 1px solid var(--clr-primary-400);
+}
+
+.nav-icons ul {
+  gap: 30px;
+}
+
+.nav-icons ul li .mobile-toggle {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .secondary-nav {
+    display: none;
+
+    position: fixed;
+    inset: 7rem 20px auto;
+    padding: 20px;
+    background: var(--clr-background-400);
+  }
+
+  .secondary-nav[data-visible] {
+    display: block;
+  }
+
+  .nav-icons ul li .mobile-toggle {
+    display: block;
+  }
+}
+
+.dropdown-link {
+  gap: 5px;
+  position: relative;
+}
+
+.dropdown-list {
+  position: absolute;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+  width: 250px;
+  padding: 30px 0;
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+
+  transform: translateY(0.5rem);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  transform: translateY(0rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-list li a {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.hero-p {
+  gap: 10px;
+}
+
+/*Product list */
+.sidebar-item {
+  margin-top: 30px;
+}
+
+.sidebar-item h5 {
+  margin-bottom: 10px;
+}
+
+.sizes .size-list {
+  gap: 12px;
+}
+
+.sizes .size-item button {
+  min-width: 42px;
+  min-height: 42px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--clr-background-700);
+  background: transparent;
+}
+
+.sizes .size-item button:hover,
+.sizes .size-item button:active {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+}
+
+.color-list {
+  gap: 10px;
+}
+
+.color-list .color-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.price-list,
+.collection-list {
+  align-items: start;
+  gap: 10px;
+}
+
+.brand-list button,
+.tag-list button {
+  margin-right: 10px;
 }
