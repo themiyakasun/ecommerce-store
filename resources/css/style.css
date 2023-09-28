@@ -1567,3 +1567,47 @@ td {
     height: 20px;
   }
 }
+
+/* Checkout */
+
+.checkout {
+  flex-direction: row-reverse;
+}
+
+.checkout .contact-info .top {
+  align-items: end;
+}
+
+.checkout .payment-details .contact-info .top h2 {
+  line-height: 100%;
+}
+
+.checkout .payment-details input,
+.checkout .payment-details select {
+  margin-top: 15px;
+  padding: 25px;
+}
+
+.checkout .w-100 {
+  width: 100%;
+  color: var(--clr-accent-400);
+}
+
+.checkout .payment-details .delivery-info {
+  margin-top: 60px;
+}
+
+.checkout .col-2 {
+  margin-right: -5px;
+  margin-left: -5px;
+  padding: 0 5px;
+}
+
+.checkout .delivery-info .save span {
+  padding: 10px 0;
+}
+
+.checkout .delivery-info .save input {
+  width: 32px;
+  height: 32px;
+}
