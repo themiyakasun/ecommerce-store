@@ -17,6 +17,7 @@
   --ff-primary: 'Poppins', sans-serif;
   --ff-secondary: 'Volkhov', sans-serif;
   --ff-digital: 'Digital Numbers', sans-serif;
+  --ff-accent: 'Jost', sans-serif;
 
   --fw-regular: 400;
   --fw-semi-bold: 500;
@@ -182,6 +183,10 @@ svg {
   font-family: var(--ff-digital);
 }
 
+.ff-accent {
+  font-family: var(--ff-accent);
+}
+
 .bg-400 {
   background-color: var(--clr-background-400);
 }
@@ -287,6 +292,11 @@ svg {
 
   .col-4 {
     max-width: 100%;
+  }
+
+  .col-75 {
+    max-width: 100%;
+    flex: 0 0 100%;
   }
 }
 
@@ -985,4 +995,91 @@ footer {
 .brand-list button,
 .tag-list button {
   margin-right: 10px;
+}
+
+.product-list-header form select {
+  border: none;
+  outline: none;
+}
+
+.product-list-header .grids {
+  gap: 10px;
+}
+
+.product-list-header .grids .grid-item {
+  padding: 10px;
+  border-radius: 3px;
+  background: var(--clr-background-700);
+}
+
+.product-list {
+  margin-top: 30px;
+}
+
+.product-card {
+  margin-bottom: 30px;
+}
+
+.product-card .product-img {
+  position: relative;
+}
+
+.product-card .product-img .sold-out {
+  font-size: 10px;
+  font-weight: 900;
+  padding: 16.7px 12.17px 13.3px 12.83px;
+  border-radius: 27px;
+  background-color: var(--clr-accent-500);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card h5,
+.product-card .colors {
+  margin-top: 20px;
+}
+
+.product-card p {
+  margin-top: 5px;
+}
+
+.product-card .colors {
+  gap: 10px;
+}
+
+.product-card .colors .color-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .colors .color-btn.active {
+  box-shadow: 0px 0px 0px 4px #fff inset, 0px 0px 0px 1px #000;
+}
+
+.page-list {
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.page-list > * {
+  display: inline-flex;
+  padding: 9px 18.61px 11px 17.39px;
+  border-radius: 9999px;
+  background-color: var(--clr-background-500);
+}
+
+@media (max-width: 800px) {
+  .sidebar-filter {
+    display: none;
+  }
+
+  .product-list > * {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
