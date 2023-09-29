@@ -113,8 +113,35 @@
      <section>
       <div class="container">
        <div class="checkout flex">
-        <div class="col-2"></div>
-        <div class="col-2">
+        <div class="col-2 bg-500" style="padding-top: 60px; height: fit-content;">
+          <div class="product-details">
+            <div class="product flex items-center">
+
+              <div class="product-image">
+                <img src="resources/images/product_list_6.png" alt="">
+              </div>
+
+              <div class="product-content">
+                <h5 class="ff-heading" style="font-size: 18px;">Mini dress with ruffled straps</h5>
+                <p class="flex justify-between" style="margin-top: 10px;"><span>Red</span> <span>$100.00</span></p>
+              </div>
+              
+            </div>
+
+            <div class="discount flex">
+              <input type="text" placeholder="Discount code">
+              <button class="button">Apply</button>
+            </div>
+
+            <div class="total" style="margin-top: 20px;">
+              <p class="flex justify-between"><span>Subtotal</span><span>$100.00</span></p>
+              <p class="flex justify-between"><span>Shipping</span><span>$40.00</span></p>
+              <p class="flex justify-between"><span>Total</span><span class="text-neutral-900">$140.00</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2" style="padding-top: 60px">
          <div class="payment-details">
 
           <div class="contact-info">
@@ -146,8 +173,45 @@
             <div class="col-2">
              <input type="text" class="w-100" placeholder="Postal Code">
             </div>
-           </div>
+           </div>  
           </div>
+
+          <div class="save flex items-center">
+            <label for="">
+              <input type="checkbox" name="" id=""> Save This Info for future
+            </label>
+           </div>
+
+           <div class="payment-info">
+            <h2 class="ff-heading fs-headings">Payment</h2>
+
+            <button class="btn credit-card-btn w-100 flex justify-between">Credit Card
+              <div class="flex items-center" style="gap: 10px;">
+                <img src="resources/icons/visa.png" alt="">
+                <img src="resources/icons/arrow-bottom.png" alt="">
+              </div>
+            </button>
+            <div class="credit-card-info">
+              <input type="text" class="w-100" placeholder="Card Number">
+              <div class="flex justify-between">
+                <div class="col-2">
+                <input type="text" class="w-100" placeholder="Expiration Date">
+                </div>
+                <div class="col-2">
+                <input type="text" class="w-100" placeholder="Security Code">
+                </div>
+              </div>
+              <input type="text" class="w-100" placeholder="Card Holder Name">
+              <div class="save flex items-center">
+                <label for="">
+                  <input type="checkbox" name="" id=""> Save This Info for future
+                </label>
+              </div>
+            </div>
+
+            <button class="button" style="margin-top: 30px; width: 100%;">Pay Now</button>
+            <p class="text-center fs-300" style="margin-top: 40px;">Copyright © 2022 FASCO . All Rights Reseved.</p>
+           </div>
 
 
          </div>
@@ -220,7 +284,9 @@
 
     <script src="resources/js/script.js"></script>
     <script>
+      creditCardDropdown();
       secondaryNavFunc();
+      cartSidebar();
     </script>
   </body>
 </html>

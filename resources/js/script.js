@@ -1,5 +1,4 @@
 //carousel
-
 const carousel = () => {
   const state = {};
   const carouselList = document.querySelector('.carousel__list');
@@ -70,21 +69,23 @@ const carousel = () => {
 };
 
 //cart-sidebar
-const cartToggle = document.querySelector('.cart-btn');
-const cartSidebarWrapper = document.querySelector('.cart-sidebar-wrapper');
-const cartSidebar = document.querySelector('.cart-sidebar');
-const sidebarClose = document.querySelector('.close-btn');
-const body = document.querySelector('body');
+const cartSidebar = () => {
+  const cartToggle = document.querySelector('.cart-btn');
+  const cartSidebarWrapper = document.querySelector('.cart-sidebar-wrapper');
+  const cartSidebar = document.querySelector('.cart-sidebar');
+  const sidebarClose = document.querySelector('.close-btn');
+  const body = document.querySelector('body');
 
-cartToggle.addEventListener('click', () => {
-  cartSidebarWrapper.classList.add('show');
-  cartSidebar.classList.add('show');
-});
+  cartToggle.addEventListener('click', () => {
+    cartSidebarWrapper.classList.add('show');
+    cartSidebar.classList.add('show');
+  });
 
-sidebarClose.addEventListener('click', () => {
-  cartSidebarWrapper.classList.remove('show');
-  cartSidebar.classList.remove('show');
-});
+  sidebarClose.addEventListener('click', () => {
+    cartSidebarWrapper.classList.remove('show');
+    cartSidebar.classList.remove('show');
+  });
+};
 
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const secondaryNavToggle = document.querySelector('.mobile-toggle');
@@ -153,4 +154,17 @@ const countdown = () => {
   document.querySelector('.secs').innerHTML = textSecond;
 };
 
-setInterval(countdown, 1000);
+// setInterval(countdown, 1000);
+
+//credit-card dropdown
+const creditCardDropdown = () => {
+  const creditCardbtn = document.querySelector('.credit-card-btn');
+  const creditCardInfo = document.querySelector('.credit-card-info');
+
+  console.log(creditCardbtn);
+  console.log(creditCardInfo);
+
+  creditCardbtn.addEventListener('click', () => {
+    creditCardInfo.classList.toggle('show');
+  });
+};
