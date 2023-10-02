@@ -57,13 +57,17 @@
           <div class="primary-nav" id="primary-nav">
             <ul role="list" class="nav-list">
               <li>
-                <a href="" class="capitalize text-primary-400 fs-400">home</a>
+                <a href="/" class="capitalize text-primary-400 fs-400">home</a>
               </li>
               <li>
-                <a href="" class="capitalize text-primary-400 fs-400">deals</a>
+                <a href="#deals" class="capitalize text-primary-400 fs-400"
+                  >deals</a
+                >
               </li>
               <li>
-                <a href="" class="capitalize text-primary-400 fs-400"
+                <a
+                  href="#new-arrival"
+                  class="capitalize text-primary-400 fs-400"
                   >new arrival</a
                 >
               </li>
@@ -73,11 +77,13 @@
                 >
               </li>
               <li>
-                <a href="" class="capitalize text-primary-400 fs-400"
+                <a href="signin.html" class="capitalize text-primary-400 fs-400"
                   >sign in</a
                 >
               </li>
-              <li><a href="" class="capitalize button">sign up</a></li>
+              <li>
+                <a href="signup.html" class="capitalize button">sign up</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -97,7 +103,7 @@
                 <h2 class="fw-semi-bold uppercase">ultimate</h2>
                 <h1 class="fw-semi-bold uppercase">sale</h1>
                 <h3 class="fs-500 uppercase">new collection</h3>
-                <a href="#" class="uppercase button">shop now</a>
+                <a href="shop.html" class="uppercase button">shop now</a>
               </div>
               <div class="bottom-img">
                 <img src="resources/images/header_2.png" alt="" />
@@ -138,10 +144,10 @@
       <!-- End of Logo section -->
 
       <!-- Deal of month section -->
-      <section class="deal">
+      <section class="deal" id="deals">
         <div class="container">
-          <div class="deal-box flex">
-            <div class="time-countdown col-2">
+          <div class="deal-box">
+            <div class="time-countdown">
               <h2 class="ff-heading fs-headings fw-regular capitalize">
                 Deals Of The Month
               </h2>
@@ -195,40 +201,92 @@
                 </div>
               </div>
             </div>
-            <div class="slider-container">
-              <div class="slider-wrapper">
-                <div class="slider flex">
-                  <div class="slide active">
-                    <img src="resources/images/carousel_1.png" alt="" />
-                  </div>
-                  <div class="slide next">
-                    <img src="resources/images/carousel_2.png" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="resources/images/carousel_1.png" alt="" />
+
+            <div class="slide" id="slide">
+              <div class="item" id="item">
+                <div class="item-content">
+                  <img src="resources/images/carousel_1.png" alt="" />
+                  <div class="content flex flex-col justify-center">
+                    <p class="flex items-center" style="gap: 10px">
+                      <span>01</span>
+                      <img
+                        src="resources/icons/line.png"
+                        alt=""
+                        style="width: 20px; height: 2px"
+                      />
+                      <span>Spring Sale</span>
+                    </p>
+                    <h5 class="fs-700">30% OFF</h5>
                   </div>
                 </div>
               </div>
-              <div class="btn-container flex">
-                <button class="slider-btn flex justify-center items-center">
-                  <img
-                    src="resources/icons/next.svg"
-                    alt=""
-                    style="transform: rotate(180deg)"
-                  />
-                </button>
-                <button class="slider-btn flex justify-center items-center">
-                  <img src="resources/icons/next.svg" alt="" />
-                </button>
+              <div class="item" id="item">
+                <div class="item-content">
+                  <img src="resources/images/carousel_2.png" alt="" />
+                  <div class="content flex flex-col justify-center">
+                    <p class="flex items-center" style="gap: 10px">
+                      <span>01</span>
+                      <img
+                        src="resources/icons/line.png"
+                        alt=""
+                        style="width: 20px; height: 2px"
+                      />
+                      <span>Spring Sale</span>
+                    </p>
+                    <h5 class="fs-700">30% OFF</h5>
+                  </div>
+                </div>
               </div>
+              <div class="item" id="item">
+                <div class="item-content">
+                  <img src="resources/images/carousel_3.png" alt="" />
+                  <div class="content flex flex-col justify-center">
+                    <p class="flex items-center" style="gap: 10px">
+                      <span>01</span>
+                      <img
+                        src="resources/icons/line.png"
+                        alt=""
+                        style="width: 20px; height: 2px"
+                      />
+                      <span>Spring Sale</span>
+                    </p>
+                    <h5 class="fs-700">30% OFF</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-btn flex justify-center">
+              <button class="slider-btn" id="nextBtn">
+                <img
+                  src="resources/icons/next.svg"
+                  alt=""
+                  style="transform: rotate(180deg)"
+                />
+              </button>
+              <button class="slider-btn" id="prevBtn">
+                <img src="resources/icons/next.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="dot-container flex items-center" id="dot-container">
+              <button class="dot" data-index="0">
+                <div class="btn-inside"></div>
+              </button>
+              <button class="dot" data-index="1">
+                <div class="btn-inside"></div>
+              </button>
+              <button class="dot" data-index="2">
+                <div class="btn-inside"></div>
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- End of Deal of month section -->
 
-      <!-- New ariival section -->
-      <section class="new-arrival">
+      <!-- New arival section -->
+      <section class="new-arrival" id="new-arrival">
         <div class="container">
           <h2 class="ff-heading fs-headings fw-regular capitalize text-center">
             new arrival
@@ -425,21 +483,29 @@
             <a href="" class="capitalize button">buy now</a>
           </div>
           <div class="image-box col-2">
-            <div class="pointer-small">
-              <img src="resources/icons/point_1.svg" alt="" />
-              <div class="pointer-text-box">Flat Cap</div>
-            </div>
-            <div class="pointer-small">
-              <img src="resources/icons/point_1.svg" alt="" />
-              <div class="pointer-text-box">Hugo Boss</div>
-            </div>
-            <div class="pointer-small">
-              <img src="resources/icons/point_1.svg" alt="" />
-              <div class="pointer-text-box">Santoni</div>
-            </div>
-            <div class="pointer-long">
-              <img src="resources/icons/point_2.svg" alt="" />
-              <div class="pointer-text-box">Suspender</div>
+            <div class="image-box-image">
+              <img src="resources/images/peaky_blinders.png" alt="" />
+
+              <div class="pointer-small">
+                <img src="resources/icons/point_1.svg" alt="" />
+                <div class="pointer-text-box">Flat Cap</div>
+              </div>
+              <div class="pointer-small">
+                <img src="resources/icons/point_1.svg" alt="" />
+                <div class="pointer-text-box">Hugo Boss</div>
+              </div>
+              <div class="pointer-small">
+                <img src="resources/icons/point_1.svg" alt="" />
+                <div class="pointer-text-box">Santoni</div>
+              </div>
+              <div class="pointer-long">
+                <img src="resources/icons/point_2.svg" alt="" />
+                <div class="pointer-text-box">Suspender</div>
+              </div>
+              <div class="pointer-long">
+                <img src="resources/icons/point_2.svg" alt="" />
+                <div class="pointer-text-box">Hugo Boss</div>
+              </div>
             </div>
           </div>
         </div>
@@ -642,7 +708,9 @@
     <script src="resources/js/script.js"></script>
     <script>
       carousel();
+      slider();
       primaryNavFunc();
+      setInterval(countdown, 1000);
     </script>
   </body>
 </html>

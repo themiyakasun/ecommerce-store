@@ -294,15 +294,15 @@ svg {
     margin-left: 0;
     margin-right: 0;
   }
-}
 
-.col-4 {
-  max-width: 100%;
-}
+  .col-4 {
+    max-width: 100%;
+  }
 
-.col-75 {
-  max-width: 100%;
-  flex: 0 0 100%;
+  .col-75 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
 /* General styling */
@@ -364,6 +364,7 @@ section {
   width: 100%;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .btn-auth-outline {
@@ -374,6 +375,7 @@ section {
   background: transparent;
   width: 100%;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 /* navigation */
@@ -501,7 +503,7 @@ nav {
 }
 
 .deal-box {
-  flex-wrap: nowrap;
+  position: relative;
 }
 
 .deal-box .time-countdown {
@@ -526,6 +528,122 @@ nav {
   border-radius: 10px;
   background-color: var(--clr-neutral-100);
   box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+}
+.deal {
+  overflow: hidden;
+}
+.slide .item {
+  width: 404px;
+  height: 582px;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.slide .item img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide .item:nth-child(1) {
+  left: 50%;
+}
+
+.slide .item:nth-child(2) {
+  left: calc(50% + 424px);
+  height: 486px;
+}
+
+.slide .item:nth-child(3) {
+  left: calc(50% + 848px);
+  height: 486px;
+}
+
+.slide-btn {
+  position: absolute;
+  bottom: -20%;
+  left: 40%;
+  transform: translate(-50%, 0);
+}
+
+.slide .item .item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide .item .item-content .content {
+  padding: 0 20px;
+}
+
+.slide .item .content {
+  width: 217px;
+  height: 130px;
+  background-color: var(--clr-neutral-100);
+
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+}
+
+.slide .item:nth-child(2) .item-content .content,
+.slide .item:nth-child(3) .item-content .content {
+  display: none;
+}
+
+.dot-container {
+  gap: 10px;
+  position: absolute;
+  bottom: -20%;
+  right: 10%;
+}
+
+.dot-container .dot {
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  padding: 5px;
+  background: transparent;
+}
+
+.dot-container .dot .btn-inside {
+  width: 11px;
+  height: 11px;
+  background-color: var(--clr-accent-400);
+  border-radius: 50%;
+}
+
+.dot-container .dot.active {
+  border: 1px solid var(--clr-neutral-900);
+}
+
+.dot-container .dot.active .btn-inside {
+  background-color: var(--clr-neutral-900);
+}
+
+@media (max-width: 800px) {
+  .deal-box {
+    height: 1200px;
+  }
+
+  .slide .item {
+    top: auto;
+    bottom: 10%;
+  }
+
+  .slide-btn {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slide .item:nth-child(1) {
+    left: 0;
+  }
+
+  .slide .item:nth-child(2) {
+    left: 424px;
+  }
 }
 
 /* new arrival */
@@ -601,10 +719,12 @@ nav {
 }
 
 .peaky-blinders .image-box {
-  background: url(../images/peaky_blinders.png),
-    #f8f8f8 0px -42.956px / 100% 126.659% no-repeat;
-  position: relative;
+  background: #f8f8f8 0px -42.956px / 100% 126.659%;
   margin-right: -40px;
+}
+
+.peaky-blinders .image-box .image-box-image {
+  position: relative;
 }
 
 .peaky-blinders .text-box {
@@ -639,29 +759,45 @@ nav {
   margin-bottom: 60px;
 }
 
-.peaky-blinders .image-box .pointer-small,
-.peaky-blinders .image-box .pointer-long {
+.peaky-blinders .image-box .image-box-image .pointer-small,
+.peaky-blinders .image-box .image-box-image .pointer-long {
   position: absolute;
+  z-index: 5;
 }
 
-.peaky-blinders .image-box .pointer-small:first-child {
+.peaky-blinders .image-box .image-box-image .pointer-small:first-child {
   top: 10px;
   left: 42%;
 }
 
-.peaky-blinders .image-box .pointer-small:nth-child(2) {
+.peaky-blinders .image-box .image-box-image .pointer-small:nth-child(2) {
+  top: 10px;
+  left: 42%;
+}
+
+.peaky-blinders .image-box .image-box-image .pointer-small:nth-child(3) {
   top: 35%;
   left: 38%;
 }
 
-.peaky-blinders .image-box .pointer-small:nth-child(3) {
+.peaky-blinders .image-box .image-box-image .pointer-small:nth-child(4) {
   bottom: 5%;
   left: 40%;
 }
 
-.peaky-blinders .image-box .pointer-long {
+.peaky-blinders .image-box .image-box-image .pointer-long:nth-child(1) {
   left: 0;
   top: 30%;
+}
+
+.peaky-blinders .image-box .image-box-image .pointer-long:nth-child(5) {
+  left: 0;
+  top: 30%;
+}
+
+.peaky-blinders .image-box .image-box-image .pointer-long:nth-child(6) {
+  left: -20px;
+  top: 50%;
 }
 
 .peaky-blinders .image-box .pointer-small .pointer-text-box,
@@ -928,6 +1064,12 @@ footer {
     inset: 7rem 20px auto;
     padding: 20px;
     background: var(--clr-background-400);
+    text-align: center;
+  }
+
+  .secondary-nav .dropdown-link {
+    display: flex;
+    justify-content: center;
   }
 
   .secondary-nav[data-visible] {

@@ -1,3 +1,58 @@
+//day countdown
+const countdown = () => {
+  const countDate = new Date('Oct 5, 2023 00:00:00').getTime();
+  const now = new Date().getTime();
+
+  const gap = countDate - now;
+
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  let textDay = String(Math.floor(gap / day));
+  let textHour = String(Math.floor((gap % day) / hour));
+  let textMinute = String(Math.floor((gap % hour) / minute));
+  let textSecond = String(Math.floor((gap % minute) / second));
+
+  if (textDay.length === 1) {
+    textDay = '0' + textDay;
+  }
+  if (textHour.length === 1) {
+    textHour = '0' + textHour;
+  }
+  if (textMinute.length === 1) {
+    textMinute = '0' + textMinute;
+  }
+  if (textSecond.length === 1) {
+    textSecond = '0' + textSecond;
+  }
+
+  document.querySelector('.days').innerHTML = textDay;
+  document.querySelector('.hours').innerHTML = textHour;
+  document.querySelector('.mins').innerHTML = textMinute;
+  document.querySelector('.secs').innerHTML = textSecond;
+};
+
+//cart-sidebar
+const cartSidebar = () => {
+  const cartToggle = document.querySelector('.cart-btn');
+  const cartSidebarWrapper = document.querySelector('.cart-sidebar-wrapper');
+  const cartSidebar = document.querySelector('.cart-sidebar');
+  const sidebarClose = document.querySelector('.close-btn');
+  const body = document.querySelector('body');
+
+  cartToggle.addEventListener('click', () => {
+    cartSidebarWrapper.classList.add('show');
+    cartSidebar.classList.add('show');
+  });
+
+  sidebarClose.addEventListener('click', () => {
+    cartSidebarWrapper.classList.remove('show');
+    cartSidebar.classList.remove('show');
+  });
+};
+
 //carousel
 const carousel = () => {
   const state = {};
@@ -68,25 +123,39 @@ const carousel = () => {
   };
 };
 
-//cart-sidebar
-const cartSidebar = () => {
-  const cartToggle = document.querySelector('.cart-btn');
-  const cartSidebarWrapper = document.querySelector('.cart-sidebar-wrapper');
-  const cartSidebar = document.querySelector('.cart-sidebar');
-  const sidebarClose = document.querySelector('.close-btn');
-  const body = document.querySelector('body');
+//slider
+const slider = () => {
+  const nextBtn = document.querySelector('#nextBtn');
+  const prevBtn = document.querySelector('#prevBtn');
 
-  cartToggle.addEventListener('click', () => {
-    cartSidebarWrapper.classList.add('show');
-    cartSidebar.classList.add('show');
+  const updateDots = (currentIndex) => {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+      if (index === currentIndex) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  };
+
+  nextBtn.addEventListener('click', () => {
+    let items = document.querySelectorAll('#item');
+
+    document.querySelector('#slide').appendChild(items[0]);
+    updateDots(1);
   });
 
-  sidebarClose.addEventListener('click', () => {
-    cartSidebarWrapper.classList.remove('show');
-    cartSidebar.classList.remove('show');
+  prevBtn.addEventListener('click', () => {
+    let items = document.querySelectorAll('#item');
+
+    document.querySelector('#slide').prepend(items[items.length - 1]);
+    updateDots(0);
   });
+  updateDots(0);
 };
 
+//Mobile toggle navbars
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const secondaryNavToggle = document.querySelector('.mobile-toggle');
 const nav = document.querySelector('.primary-nav');
@@ -109,6 +178,24 @@ const secondaryNavFunc = () => {
   });
 };
 
+const removeNav = () => {
+  navToggle.setAttribute('aria-expanded', false);
+  nav.removeAttribute('data-visible');
+};
+
+const removeSecNav = () => {
+  secondaryNavToggle.setAttribute('aria-expanded', false);
+  secondaryNav.removeAttribute('data-visible');
+};
+
+window.onscroll = () => {
+  removeNav();
+};
+
+window.onscroll = () => {
+  removeSecNav();
+};
+
 //drop-down
 const dropdownToggle = document.querySelector('.dropdown-link');
 const dropdown = document.querySelector('.dropdown-list');
@@ -118,43 +205,9 @@ dropdownToggle.addEventListener('click', (e) => {
   dropdown.classList.toggle('show');
 });
 
-//day countdown
-const countdown = () => {
-  const countDate = new Date('Oct 5, 2023 00:00:00').getTime();
-  const now = new Date().getTime();
-
-  const gap = countDate - now;
-
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
-
-  let textDay = String(Math.floor(gap / day));
-  let textHour = String(Math.floor((gap % day) / hour));
-  let textMinute = String(Math.floor((gap % hour) / minute));
-  let textSecond = String(Math.floor((gap % minute) / second));
-
-  if (textDay.length === 1) {
-    textDay = '0' + textDay;
-  }
-  if (textHour.length === 1) {
-    textHour = '0' + textHour;
-  }
-  if (textMinute.length === 1) {
-    textMinute = '0' + textMinute;
-  }
-  if (textSecond.length === 1) {
-    textSecond = '0' + textSecond;
-  }
-
-  document.querySelector('.days').innerHTML = textDay;
-  document.querySelector('.hours').innerHTML = textHour;
-  document.querySelector('.mins').innerHTML = textMinute;
-  document.querySelector('.secs').innerHTML = textSecond;
+window.onscroll = () => {
+  dropdown.classList.remove('show');
 };
-
-// setInterval(countdown, 1000);
 
 //credit-card dropdown
 const creditCardDropdown = () => {
